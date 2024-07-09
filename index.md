@@ -4,7 +4,7 @@ title: CyberneticsBlog
 ---
 
 ## About
-Stuff
+    Hey, this is my personal blog. I will be posting about my projects, thoughts, and other things that I find interesting. I hope you enjoy it!
+    
 
 ## Contact
-Email me, (to be added).
