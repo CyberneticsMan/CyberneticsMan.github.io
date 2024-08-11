@@ -50,4 +50,4 @@ The question was the Monty Hall Problem.
 
 Following the start of my journey into the world of AI and machine learning, I was give the assignment to solve the Monty Hall Problem as a part of my homework. where there are 3 doors and behind one of them is a car and behind the other two are goats. The player picks a door and then the host opens one of the other two doors to reveal a goat. The player is then given the option to switch doors or stay with their original choice. The question is, is it better to switch doors or stay with the original choice?
 
-this one I am yet to solve.
+-- Update: I was not turning into a percentage, lol.
