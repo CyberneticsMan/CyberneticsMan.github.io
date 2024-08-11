@@ -3,6 +3,7 @@ layout: post
 title: the AI journey begins
 date: 2024-08-11 20:00:00
 categories: AI
+published: true
 ---
 
 # The AI journey begins
