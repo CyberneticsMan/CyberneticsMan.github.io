@@ -5,7 +5,8 @@ title: CyberneticsBlog Posts
 
 <h2>Posts</h2>
 {% for category in site.categories %}
-{% for post in category[1]%}
+{% assign reversed_posts = category[1] | reverse %}
+{% for post in reversed_posts %}
 <span class="post-item">{{ post.date | date: '%Y-%m-%d' }} >> <a href="{{ post.url }}">{{ post.title }}</a></span>
 {% endfor %}
 {% endfor %}
