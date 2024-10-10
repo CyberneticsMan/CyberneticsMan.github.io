@@ -1,12 +1,10 @@
-/* Style inspiration and settings adapted from https://github.com/jgthms/web-design-in-4-minutes */
-
 /* Variables */
 $base-font-size: 18px;
 $font-family: "Courier New", "Helvetica", sans-serif;
-$primary-color: #2bff00;
-$background-color: #000000;
-$highlight-color: #00ff15;
-$link-color: #000000;
+$primary-color: #e0e0e0; /* Light grey for text */
+$background-color: #1e1e1e; /* Dark background */
+$highlight-color: #569cd6; /* Blue for highlights */
+$link-color: #569cd6; /* Blue for links */
 $padding-large: 30px;
 $padding-small: 15px;
 $line-height: 30px;
@@ -21,6 +19,7 @@ body {
   font-family: $font-family;
   color: $primary-color;
   background-color: $background-color;
+  line-height: 1.6;
 }
 
 /* Spacing */
@@ -55,6 +54,8 @@ header h5 {
 code {
   padding: 2px 4px;
   vertical-align: text-bottom;
+  background-color: #2d2d2d; /* Slightly lighter background for code */
+  color: #dcdcdc; /* Light grey for code text */
 }
 
 /* Primary Color */

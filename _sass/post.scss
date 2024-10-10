@@ -1,20 +1,17 @@
 .post-info {
-  padding-bottom: 30px;
+  padding: 20px 0 30px;
   margin: 20px 0 5px;
-  padding-top: 20px;
 }
 
 .post-content {
-  line-height: 35px;
+  line-height: 1.75;
   padding-bottom: 50px;
-}
 
-.post-content h1, h3, code, pre {
-  padding-bottom: 10px;
-  padding-top: 10px;
-}
+  h1, h3, code, pre {
+    padding: 10px 0;
+  }
 
-.post-content h2 {
-  padding-bottom: 20px;
-  padding-top: 20px;
+  h2 {
+    padding: 20px 0;
+  }
 }
