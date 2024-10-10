@@ -16,3 +16,6 @@ I often times mod games such as Minecraft
 wether its for a commission or personal tweaks and additions to the game, I love changing the game to my liking
 
 ## Contact
+Email: [
+    mailto:cyberneticsman@gmail.com
+]
