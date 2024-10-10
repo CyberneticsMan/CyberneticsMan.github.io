@@ -1,33 +1,38 @@
-/* Style inspiration and settings adapted from https://github.com/jgthms/web-design-in-4-minutes*/
+/* Style inspiration and settings adapted from https://github.com/jgthms/web-design-in-4-minutes */
+
+/* Variables */
+$base-font-size: 18px;
+$font-family: "Courier New", "Helvetica", sans-serif;
+$primary-color: #2bff00;
+$background-color: #000000;
+$highlight-color: #00ff15;
+$link-color: #000000;
+$padding-large: 30px;
+$padding-small: 15px;
+$line-height: 30px;
 
 /* Base */
 html {
-  font-size: 18px;
+  font-size: $base-font-size;
 }
 
-/* 01 Font family */
-
+/* Font Family */
 body {
-  font-family: "Courier New", "Helvetica", sans-serif;
+  font-family: $font-family;
+  color: $primary-color;
+  background-color: $background-color;
 }
 
-/* 03 Spacing */
-
-
-.padded {
-  padding-top: 30px;
-  padding-bottom: 30px;
-  line-height: 30px;
-}
-
+/* Spacing */
+.padded,
 .main-content {
-  padding-top: 30px;
-  padding-bottom: 30px;
-  line-height: 30px;
+  padding-top: $padding-large;
+  padding-bottom: $padding-large;
+  line-height: $line-height;
 }
 
 div.main-content h2 {
-  padding-top: 15px;
+  padding-top: $padding-small;
   padding-bottom: 5px;
 }
 
@@ -35,38 +40,29 @@ header h1, h5 {
   display: inline;
 }
 
-/* 04 Color and contrast */
-
-body {
-  color: #2bff00;
-  background-color: #000000;
-}
-
+/* Color and Contrast */
 h1,
 h2,
 strong {
-  color: #00ff15;
+  color: $highlight-color;
 }
 
 header h5 {
   font-weight: lighter;
 }
 
-/* 05 Balance */
-
+/* Balance */
 code {
   padding: 2px 4px;
   vertical-align: text-bottom;
 }
 
-/* 06 Primary color */
-
+/* Primary Color */
 a {
-  color: #000000;
+  color: $link-color;
 }
 
-/* 07 Secondary colors */
-
+/* Secondary Colors */
 h1,
 h2,
 strong {
