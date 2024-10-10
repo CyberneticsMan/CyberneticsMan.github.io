@@ -1,5 +1,4 @@
 ---
-```markdown
 layout: post
 title: The AI Journey Begins
 date: 2024-08-11 00:00:00
