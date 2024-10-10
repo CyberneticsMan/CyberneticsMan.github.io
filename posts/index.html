@@ -1,21 +1,25 @@
 ---
 layout: default
 title: CyberneticsBlog Home
-pagination:
-enabled: true
 ---
 
 <h2>Posts</h2>
 {% for post in paginator.posts %}
-<span class="post-item"><span class="mobile-hide"> {{ post.date | date: '%Y-%m-%d' }} >> </span><a
-        href="{{ post.url }}">{{ post.title }}</a><span class="float-right mobile-hide">{{ post.categories
-        }}</span></span>
+    <span class="post-item">{{ post.date | date: '%Y-%m-%d' }} >> <a href="{{ post.url }}">{{ post.title }}</a></span>
 {% endfor %}
 
-<div class="post-nav">
-    {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path }}" class="post-nav-left">Newer Posts</a>
-    {% endif %}
-    {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path }}" class="post-nav-right">Older Posts</a>
-    {% endif %}
+{% if paginator.total_pages > 1 %}
+    <div class="pagination">
+        {% if paginator.previous_page %}
+            <a href="{{ paginator.previous_page_path }}" class="previous">Previous</a>
+        {% else %}
+            <span class="previous">Previous</span>
+        {% endif %}
+        <span class="page_number">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
+        {% if paginator.next_page %}
+            <a href="{{ paginator.next_page_path }}" class="next">Next</a>
+        {% else %}
+            <span class="next">Next</span>
+        {% endif %}
+    </div>
+{% endif %}
