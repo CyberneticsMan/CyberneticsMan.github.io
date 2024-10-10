@@ -13,28 +13,9 @@ enabled: true
 {% endfor %}
 
 <div class="post-nav">
-    {% if paginator.total_pages > 1 %}
-    {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path | prepend: site.baseurl }}">&lt;- Older</a>
-    {% endif %}
     {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}">Newer -&gt;</a>
+    <a href="{{ paginator.previous_page_path }}" class="post-nav-left">Newer Posts</a>
     {% endif %}
-    {% endif %}
-    {% if paginator.total_pages > 1 %}
-    <div class="pagination">
-        {% if paginator.previous_page %}
-        <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}" class="pagination-link">Previous</a>
-        {% endif %}
-        {% for page in (1..paginator.total_pages) %}
-        {% if page == paginator.page %}
-        <span class="pagination-link current-page">{{ page }}</span>
-        {% else %}
-        <a href="{{ paginator.page_path | prepend: site.baseurl }}" class="pagination-link">{{ page }}</a>
-        {% endif %}
-        {% endfor %}
-        {% if paginator.next_page %}
-        <a href="{{ paginator.next_page_path | prepend: site.baseurl }}" class="pagination-link">Next</a>
-        {% endif %}
-    </div>
+    {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path }}" class="post-nav-right">Older Posts</a>
     {% endif %}
