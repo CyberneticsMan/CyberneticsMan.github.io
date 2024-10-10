@@ -8,7 +8,6 @@ $link-color: #569cd6; /* Blue for links */
 $padding-large: 30px;
 $padding-small: 15px;
 $line-height: 30px;
-$content-width: 80%; /* Increase the width of the content */
 
 /* Base */
 html {
@@ -19,7 +18,7 @@ html {
 body {
   font-family: $font-family;
   color: $primary-color;
-  background: linear-gradient(to bottom, #1e1e1e 50%, #2d2d2d 50%); /* Split color effect */
+  background-color: $background-color;
   line-height: 1.6;
 }
 
@@ -29,8 +28,6 @@ body {
   padding-top: $padding-large;
   padding-bottom: $padding-large;
   line-height: $line-height;
-  width: $content-width; /* Apply the increased width */
-  margin: 0 auto; /* Center the content */
 }
 
 div.main-content h2 {
